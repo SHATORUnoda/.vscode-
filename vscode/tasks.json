@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Auto Pull (Linux)",
+      "type": "shell",
+      "command": "/usr/bin/bash",
+      "args": [
+        "${workspaceFolder}/settings/auto-pull.sh"
+      ],
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "problemMatcher": []
+    },
+    {
+      "type": "cppbuild",
+      "label": "C++: g++ ビルド",
+      "command": "/usr/bin/g++",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "-std=c++23",
+        "${file}",
+        "-I",
+        "${env:HOME}/lib/ac-library-master",
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Ubuntu用 C++23/ACL ビルドタスク"
+    }
+  ]
+}

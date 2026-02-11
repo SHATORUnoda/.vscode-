@@ -19,7 +19,6 @@
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "C++: g++ ビルド",
       "miDebuggerPath": "/usr/bin/gdb"
     },
     {

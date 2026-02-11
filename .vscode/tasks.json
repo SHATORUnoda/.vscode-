@@ -2,18 +2,6 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Auto Pull (Linux)",
-      "type": "shell",
-      "command": "/usr/bin/bash",
-      "args": [
-        "${workspaceFolder}/settings/auto-pull.sh"
-      ],
-      "runOptions": {
-        "runOn": "folderOpen"
-      },
-      "problemMatcher": []
-    },
-    {
       "type": "cppbuild",
       "label": "C++: g++ ビルド",
       "command": "/usr/bin/g++",
